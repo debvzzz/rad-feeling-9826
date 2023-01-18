@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.cdnfonts.com/css/futura-pt");
+
+    body{
+        margin: 0;
+    }
+    #navbar-top {
+      font-family: "Futura PT", sans-serif;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      background-color: white;
+      color: grey;
+    }
+
+    #navbar-top-right {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    /* #navbar-top-right > * {
+      font-size: 20px;
+      font-family: inherit;
+    } */
+
+    .divider {
+      align-self: stretch;
+      width: 1px;
+      background-color: grey;
+    }
+
+    #navbar-top-right > div img {
+      width: 40%;
+      align-content: center;
+    }
+
+    #navbar-mid,
+    #navbar-mid-left {
+      display: flex;
+    }
+
+    #navbar-mid-left {
+      gap: 20px;
+    }
+
+    #navbar-mid {
+      justify-content: center;
+    }
+    #navbar-mid-right {
+      display: flex;
+    }
+    #search-img {
+      position: absolute;
+      right: 10px;
+      top: 11px;
+      height: 18px;
+      width: 18px;
+    }
+    #search {
+      position: relative;
+    }
+    #search-bar {
+      border-radius: 25px;
+      height: 38px;
+      width: 790px;
+    }
+  </style>
+
+  <body>
+    <div id="navbar-top">
+      <div></div>
+      <div id="navbar-top-right">
+        <div class="divider"></div>
+        <h3>Marketplace</h3>
+        <div class="divider"></div>
+        <h3>Help & FAQs</h3>
+        <div class="divider"></div>
+        <div>
+          <img
+            src="https://assets.asosservices.com/storesa/images/flags/in.png"
+            alt="Error"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="navbar-mid">
+      <div id="navbar-mid-left">
+        <div><img src="./images_folder/asos.svg" alt="Error" /></div>
+        <div>WOMEN</div>
+        <div>MEN</div>
+        <div id="search">
+          <input
+            type="text"
+            placeholder="Search for items and brands"
+            id="search-bar"
+          />
+          <img
+            src="./images_folder/search_FILL0_wght400_GRAD0_opsz48.svg"
+            alt=""
+            id="search-img"
+          />
+        </div>
+      </div>
+      <div id="navbar-mid-right">
+        <div>
+          <img
+            src="./images_folder/person_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="Error"
+          />
+        </div>
+        <div>
+          <img
+            src="./images_folder/favorite_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="Error"
+          />
+        </div>
+        <div>
+          <img
+            src="./images_folder/shopping_bag_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="Error"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
