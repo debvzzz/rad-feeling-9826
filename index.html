@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.cdnfonts.com/css/futura-pt");
+
+    body{
+        margin: 0;  
+    }
+    #navbar-top {
+      font-family: "Futura PT", sans-serif;
+      width: auto;
+      display: flex;
+      justify-content: flex-end;
+      color: grey;
+    }
+
+    #navbar-top-right {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .divider {
+      align-self: stretch;
+      width: 1px;
+      background-color: grey;
+    }
+
+    #navbar-top-right > div img {
+      width: 40%;
+      align-content: center;
+    }
+
+    #navbar-mid,
+    #navbar-mid-left {
+      display: flex;
+    }
+
+    #navbar-mid-left {
+      gap: 20px;
+
+    }
+
+    #navbar-mid {
+      justify-content: center;
+      font-family: "Futura PT", sans-serif;
+    }
+    #navbar-mid-right {
+      display: flex;
+    }
+    #navbar-mid-left{
+        align-items: center;
+    }
+    #search-img {
+      position: absolute;
+      right: 10px;
+      top: 11px;
+      height: 18px;
+      width: 18px;
+    }
+    #search {
+      position: relative;
+      
+    }
+    #search-bar {
+      border-radius: 25px;
+      height: 38px;
+      width: 790px;
+    }
+    #navbar-mid-right {
+        gap:30px;
+    }
+    #navbar-mid{
+        background-color: rgb(58, 54, 54);
+        gap: 10px;
+        color: white;
+    }
+   #navbar-mid-right img{
+    filter:  brightness(0) invert(1);
+   }
+    #search-bar::placeholder{
+       padding-left: 20px;
+       font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #navbar-mid-left img:first-child{
+        filter:  brightness(0) invert(1);
+    }
+    #navbar-bottom{
+        background-color: red;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #navbar-bottom div:nth-child(2){
+        text-align: center;
+    }
+    #navbar-bottom>div:nth-child(1),#navbar-bottom>div:nth-child(3){
+        border: 3px solid black;
+        width: 60px;
+        text-align: center;
+    }
+    #body-top {
+        margin: auto;
+        height: 65%;
+        width: 75%;
+        position: relative;
+    }
+    #body-top img{
+       width: 100%;
+    }
+    #body-text{
+        position: absolute;
+        bottom: 30%;
+        right:32%;
+        background-color:white;
+        color: rgb(11, 11, 11);
+        padding-left: 60px;
+        padding-right: 60px;
+        font-size: 30px;
+        text-align: center;
+        margin: auto;
+    }
+   
+  </style>
+
+  <body>
+    <div id="navbar-top">
+      <div></div>
+      <div id="navbar-top-right">
+        <div class="divider"></div>
+        <h3>Marketplace</h3>
+        <div class="divider"></div>
+        <h3>Help & FAQs</h3>
+        <div class="divider"></div>
+        <div>
+          <img
+            src="https://assets.asosservices.com/storesa/images/flags/in.png"
+            alt="Error"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="navbar-mid">
+      <div id="navbar-mid-left">
+        <div><img src="./images_folder/asos.svg" alt="Error" /></div>
+        <div>WOMEN</div>
+        <div>MEN</div>
+        <div id="search">
+          <input
+            type="text"
+            placeholder="Search for items and brands"
+            id="search-bar"
+          />
+          <img
+            src="./images_folder/search_FILL0_wght400_GRAD0_opsz48.svg"
+            alt=""
+            id="search-img"
+          />
+        </div>
+      </div>
+      <div id="navbar-mid-right">
+        <div>
+          <img
+            src="./images_folder/person_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="Error"
+          />
+        </div>
+        <div>
+          <img
+            src="./images_folder/favorite_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="Error"
+          />
+        </div>
+        <div>
+          <img
+            src="./images_folder/shopping_bag_FILL0_wght400_GRAD0_opsz48.svg"
+            alt="Error"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="navbar-bottom">
+        <div>WOMEN</div>
+        <div>
+            <div>UP TO 30% OFF EVERYTHING*</div>
+            <div>SURPRISE DISCOUNT REVEALED AT CHECKOUT</div>
+            <div>With code:LUNAR</div>
+        </div>
+        <div>MEN</div>
+    </div>
+    <br>
+    <div id="body-top">
+        <img src="https://content.asos-media.com/-/media/homepages/unisex/generic-hp/september-2022/microsoftteams-image-169---dt--.png" alt="">
+        <div id="body-text">
+            <h1>This is ASOS</h1>
+            <p>ASOS DESIGN and 850+ brands</p>
+         </div>
+    </div>
+    <div>
+
+    </div>
+  </body>
+</html>
