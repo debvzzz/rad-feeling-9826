@@ -120,19 +120,74 @@
     #body-top img{
        width: 100%;
     }
-    #body-text{
+   #body-text-diff>div:first-child{
         position: absolute;
         bottom: 30%;
-        right:32%;
+        right:37%;
         background-color:white;
         color: rgb(11, 11, 11);
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left:20px;
+        padding-right:20px;
         font-size: 30px;
         text-align: center;
-        margin: auto;
+   }
+   #body-text-diff>div:last-child{
+        position: absolute;
+        bottom:10%;
+        right:53%;
+        background-color:white;
+        color: rgb(11, 11, 11);
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 50px;
+        text-align: center;
+   }
+   #body-text-diff>div:nth-child(2){
+        position: absolute;
+        bottom:10%;
+        right:37%;
+        background-color:white;
+        color: rgb(11, 11, 11);
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 50px;
+        text-align: center;
+   }
+   #lower-body-diff{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(46, 40, 40);
+    color: white;
+    margin-bottom: 10px;
+   }
+   #lower-body-diff div{
+    text-align: center;
+    width: 50%;
+   }
+   #lower-body-icons{
+    width: 2%;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    gap: 40px;
     }
-   
+    #footer-top{
+      background-color: gainsboro;
+      color: rgb(77, 67, 67);
+      display: flex;
+      justify-content: space-evenly;
+      font-family: "Futura PT", sans-serif;
+    }
+    #footer-top-ex-right p>img{
+      width:20%;
+      height: 10%;
+    }
+    #footer-bottom{
+      display: flex;
+      justify-content: space-evenly;
+      background-color: rgb(164, 160, 160);
+    }
+    
   </style>
 
   <body>
@@ -202,14 +257,67 @@
     </div>
     <br>
     <div id="body-top">
-        <img src="https://content.asos-media.com/-/media/homepages/unisex/generic-hp/september-2022/microsoftteams-image-169---dt--.png" alt="">
-        <div id="body-text">
-            <h1>This is ASOS</h1>
-            <p>ASOS DESIGN and 850+ brands</p>
-         </div>
+        <div><img src="https://content.asos-media.com/-/media/homepages/unisex/generic-hp/september-2022/microsoftteams-image-169---dt--.png" alt="">
+        </div>
+        <div id="body-text-diff">
+          <div><h1>This is ASOS</h1>
+            <p>ASOS DESIGN and 850+ brands</p></div>
+          <div>MEN</div>
+          <div>WOMEN</div>
+        </div>
+        <div id="lower-body-diff">
+          <div><h3>EASY WORLDWIDE DELIVERY</h3></div>
+          <div><h3>ASOS DESIGN and 850+ brands</h3></div>
+        </div>
     </div>
-    <div>
-
+    <div id="lower-body-icons">
+      <img src="./images_folder/facebook-f.svg" alt="Error">
+      <img src="./images_folder/snapchat.svg" alt="Error">
+      <img src="./images_folder/instagram.svg" alt="Error">
+      <div class="divider"></div>
+      <img src="./images_folder/visa-electron-png.webp" alt="Error">
+      <img src="./images_folder/visa-png.webp" alt="Error">
+      <img src="./images_folder/pay-pal-png.webp" alt="Error">
+      <img src="./images_folder/american-express-png.webp" alt="Error">
+      <img src="./images_folder/mastercard-png.webp" alt="Error">
     </div>
+    <br>
+    <br>
+    <footer id="footer-top">
+      <div>
+      <h3>HELP & INFORMATION</h3>
+      <br>
+      <p>Help</p>
+      <p>Track order</p>
+      <p>Delivery & returns</p>
+      <p>Sitemap</p>
+      </div>
+      <div><h3>ABOUT ASOS</h3>
+      <br>
+      <p>About us </p>
+      <p>Careers at ASOS</p>
+      <p>Corporate responsibility</p>
+      <p>Investors' site</p>
+      </div>
+      <div><h3>MORE FROM ASOS</h3>
+      <br>
+      <p>Mobile and ASOS apps</p>
+      <p>ASOS Marketplace</p>
+      <p>Gift vouchers</p>
+      <p>Black Friday</p>
+      <p>ASOS x Thrift+</p>
+      </div>
+      <div id="footer-top-ex-right"><h3>SHOPPING FROM:</h3>
+      <br>
+      <p>You're in:  <img
+        src="https://assets.asosservices.com/storesa/images/flags/in.png"
+        alt="Error"
+      /></p>
+      <h3>CHANGE</h3>
+      </div>
+    </footer>
+    <footer id="footer-bottom">
+      <div>Privacy and Cookies |  Ts&Cs | Accessibility</div>
+    </footer>
   </body>
 </html>
